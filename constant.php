@@ -1,7 +1,7 @@
 <?php
 
     // hang so phan biet hoa thuong
-    echo 'Hang so phan biet hoa thuong';
+    echo 'Hang so phan biet hoa thuong'.PHP_EOL;
     define('string','Phan biet HOA thuong',true);
     echo string;
 

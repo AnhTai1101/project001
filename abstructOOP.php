@@ -6,6 +6,7 @@
 
     class men1 extends men{
         public function speak(){
+            // định nghĩa lại function speak trong class men
             $this->name = 'Hello';
             echo $this->name;
         }
