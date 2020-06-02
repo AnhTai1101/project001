@@ -9,5 +9,6 @@
     }
     sum();
     echo $GLOBALS['a'];
+    echo $b;
 
 ?>
