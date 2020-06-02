@@ -32,6 +32,6 @@
         }
     }
     $show_constans = new echo_construc;
-    echo $show_constans::show;
+    echo $show_constans->show();
 
 ?>
