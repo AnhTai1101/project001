@@ -5,10 +5,30 @@ $a=[1,2,3];
 $b=["a","b"];
 
 function GhepPhanTu($a,$b){
-    //write your code here
+    $result = [];
+    foreach($a as $key){
+        if(is_array($key)){
+            foreach($b as $key1){
+                $nam = $key;
+                $nam[] = $key1;
+                $result[] = $nam;
+            }
+        }else{
+            foreach($b as $val2){
+                // dua gia tri vao mang con
+                $result[] = [
+                    $key,$val2
+                ];
+            }
+        }
+    }
+    return $result;
 }
 
+
+
 $c=GhepPhanTu($a,$b);
+print_r(GhepPhanTu($c,$a));
 //ket qua mong cho la 1 mang , moi item la 1 mang nhu sau:
 // [[1,"a"],[1,"b"],[2,"a"],[2,"b"],[3,"a"],[3,"b"]]
 
