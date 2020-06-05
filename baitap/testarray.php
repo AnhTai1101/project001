@@ -41,10 +41,11 @@ $e= GhepPhanTu($c,$d);
 
 
 function GhepPhanTuNangCao($arrayInput){
-//write your code here
+    //write your code here
+
 }
 
 $arr=[$a,$b,$d];// $arr co the co so luong item bat ki
-$r= GhepPhanTuNangCao($arr);
+// $r= GhepPhanTuNangCao($arr);
 //ket qua mong cho la 1 mang , moi item la 1 mang nhu sau:
 // [[1,"a","x"],[1,"a",1],[1,"b","x"],[1,"b",1],[2,"a","x"],[2,"a",1],...]
