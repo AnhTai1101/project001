@@ -1,26 +1,26 @@
 <?php
     class new01{
-        public static $model = 'fg';
+        public $model = 'fg';
         public function getModel(){
-            $this->model = 'Hello World';
+            return "Class cha";
         }
 
         public function echoModel(){
             // self::$model = 'fasdfa';
-            echo self::$model;
-        }
+            return self::getModel();
 
-        public function getModel1(){
-            self::$model = 'dsfsdf';
         }
     }
 
     class new02 extends new01{
-        public function get(){
-            $this->echoModel();
+        public function getModel(){
+            return "Class con";
         }
     }
     $val = new new02;
-    $val->getModel1();
-    $val->echoModel();
+    $cha = $val->echoModel();
+    echo $cha.PHP_EOL;
+    $con = $val->getModel();
+    echo $con;
+    
 ?>
