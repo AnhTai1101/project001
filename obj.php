@@ -1,29 +1,29 @@
 <?php
-    class new01{
+    class Bo{
         public function name(){
             return "Class cha";
         }
-
-        public function nameParent(){
-            // self::$model = 'fasdfa';
-            return self::name();
-
-        }
     }
 
-    class new02 extends new01{
+    class Con extends Bo{
         public function name(){
             return "Class con";
         }
-         public function parent(){
-            return $this->nameParent();
 
-         }
+        public function nameBo(){
+            return parent::name();
+        }
     }
-    $val = new new02;
-    $cha = $val->nameParent();
-    echo $cha.PHP_EOL;
-    $con = $val->name();
+    $class = new Con;
+
+    // goi toi name trong class con
+    $con = $class->name();
     echo $con;
+    echo "\n";
+
+    // goi toi name trong class bo
+    $bo = $class->nameBo();
+    echo $bo;
     
+
 ?>
