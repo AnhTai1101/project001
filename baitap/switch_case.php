@@ -80,14 +80,14 @@ class SwithCaseHandle
     //vd: voi item "wipeup" se viet ham 
 
     function Handle( $input){
-        $inputs = $this->inputs;
-        $test = 0;
-        foreach($inputs as $val){
-            if($val === $input){
-                $test++;
-            }
-        }
-        if($test == 0){
+        // $inputs = $this->inputs;
+        // $test = 0;
+        // foreach($inputs as $val){
+        //     if($val === $input){
+        //         $test++;
+        //     }
+        // }
+        if(!in_array($input, $inputs)){
             return "Không tồn tại";
         }
         switch($input){
